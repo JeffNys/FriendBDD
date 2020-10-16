@@ -1,0 +1,16 @@
+<?php
+// Identifiants de ma BDD
+define('DATABASE','mysql:host=localhost;dbname=*****');
+define('USER','*****');
+define('PASS','*****');
+
+define('TABLE', 'friends_list'); // pour le nom de la table, voir commande plus bas dans ce fichier
+
+// Connection à ma BDD
+$pdo = new PDO(DATABASE, USER, PASS);
+
+/* commande à jeter dans votre mysql (après avoir selectioné une base, par exemple: CREATE DATABASE test; USE test;)
+
+CREATE TABLE friends_list (id INT NOT NULL auto_increment PRIMARY KEY, first_name VARCHAR(100) NOT NULL, friend_name VARCHAR(100) NOT NULL);
+
+*/
